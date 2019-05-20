@@ -1,0 +1,9 @@
+<%= facade.tigers.count %><h2> results</h2>
+
+<% facade.tigers.each do |tiger| %>
+  <ul>
+    <li class="id"><%= tiger.id %></li>
+    <li class="url"><%= tiger.url %></li>
+    <li class="gif"><%= tiger.gif %></li>
+  </ul>
+<% end %>

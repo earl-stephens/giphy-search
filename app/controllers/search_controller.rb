@@ -1,7 +1,7 @@
 class SearchController < ApplicationController
 
   def index
-    binding.pry
+    render locals: { facade: SearchResultsFacade.new(params["q"]) }
   end
 
 end
